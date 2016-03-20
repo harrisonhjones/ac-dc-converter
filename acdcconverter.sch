@@ -268,10 +268,10 @@
 <package name="FOXCONN-113N-USB-A-FEMALE">
 <pad name="S1" x="-6.5" y="0" drill="2.5"/>
 <pad name="S2" x="6.5" y="0" drill="2.5"/>
-<wire x1="-7.5" y1="-10" x2="-7.5" y2="4.5" width="0.127" layer="21"/>
-<wire x1="-7.5" y1="4.5" x2="7.5" y2="4.5" width="0.127" layer="21"/>
-<wire x1="7.5" y1="4.5" x2="7.5" y2="-10" width="0.127" layer="21"/>
-<wire x1="7.5" y1="-10" x2="-7.5" y2="-10" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-10" x2="-7.5" y2="4.5" width="0.127" layer="48"/>
+<wire x1="-7.5" y1="4.5" x2="7.5" y2="4.5" width="0.127" layer="48"/>
+<wire x1="7.5" y1="4.5" x2="7.5" y2="-10" width="0.127" layer="48"/>
+<wire x1="7.5" y1="-10" x2="-7.5" y2="-10" width="0.127" layer="48"/>
 <pad name="GND" x="3.375" y="2.5" drill="0.8" diameter="1.6764" shape="square"/>
 <pad name="VUSB" x="-3.375" y="2.5" drill="0.8" diameter="1.6764"/>
 <pad name="D-" x="-1.02" y="2.51" drill="0.8" diameter="1.4224"/>
@@ -299,9 +299,9 @@
 <text x="0" y="-10.16" size="1.778" layer="94" font="vector" align="center">&gt;VALUE</text>
 </symbol>
 <symbol name="MOSFET-P">
-<pin name="DRAIN" x="0" y="10.16" visible="off" length="middle" rot="R270"/>
-<pin name="SOURCE" x="0" y="-10.16" visible="off" length="middle" rot="R90"/>
-<pin name="GATE" x="-10.16" y="-2.54" visible="off" length="middle"/>
+<pin name="SOURCE" x="0" y="10.16" visible="off" length="middle" rot="R270"/>
+<pin name="DRAIN" x="0" y="-10.16" visible="off" length="middle" rot="R90"/>
+<pin name="GATE" x="-10.16" y="0" visible="off" length="middle"/>
 <wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="0.762" x2="-3.81" y2="0" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="0" x2="-3.81" y2="-0.762" width="0.254" layer="94"/>
@@ -315,19 +315,24 @@
 <wire x1="-2.54" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
 <wire x1="0" y1="-5.08" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="1.016" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.016" x2="3.81" y2="1.016" width="0.254" layer="94"/>
-<wire x1="3.81" y1="1.016" x2="2.54" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-0.254" x2="1.27" y2="1.016" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-0.508" x2="3.556" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-0.254" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.508" x2="2.54" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.508" x2="3.81" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-0.508" x2="2.54" y2="0.762" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.762" x2="1.27" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="1.524" y1="0.762" x2="2.54" y2="0.762" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.762" x2="3.556" y2="0.762" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<text x="-6.35" y="1.27" size="1.27" layer="94" font="vector" align="center">G</text>
+<text x="-1.016" y="-3.81" size="1.27" layer="94" font="vector" align="center">D</text>
+<text x="-1.016" y="3.81" size="1.27" layer="94" font="vector" align="center">S</text>
+<wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="0.762" width="0.254" layer="94"/>
 </symbol>
 <symbol name="SWITCH-SPDT">
 <pin name="C" x="-2.54" y="0" visible="pad" length="short"/>
@@ -406,23 +411,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="DMG2305UX">
-<gates>
-<gate name="G$1" symbol="MOSFET-P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="DMG2305UX" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="DRAIN" pad="2"/>
-<connect gate="G$1" pin="GATE" pad="3"/>
-<connect gate="G$1" pin="SOURCE" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SWITCH-SPDT">
 <gates>
 <gate name="G$1" symbol="SWITCH-SPDT" x="-2.54" y="0"/>
@@ -469,6 +457,23 @@
 <connect gate="G$1" pin="S1" pad="S1"/>
 <connect gate="G$1" pin="S2" pad="S2"/>
 <connect gate="G$1" pin="VUSB" pad="VUSB"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOSFET-P">
+<gates>
+<gate name="G$1" symbol="MOSFET-P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DMG2305UX" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="DRAIN" pad="2"/>
+<connect gate="G$1" pin="GATE" pad="3"/>
+<connect gate="G$1" pin="SOURCE" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15687,7 +15692,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C1" library="rcl" deviceset="CPOL-US" device="E2-5"/>
 <part name="C2" library="rcl" deviceset="C-US" device="C0603"/>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0603" value="50k"/>
-<part name="U$4" library="HHJ" deviceset="DMG2305UX" device="DMG2305UX"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
@@ -15718,6 +15722,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$7" library="HHJ" deviceset="USB-FEMALE" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCCIO" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
+<part name="U$8" library="HHJ" deviceset="MOSFET-P" device="DMG2305UX"/>
 </parts>
 <sheets>
 <sheet>
@@ -15776,7 +15781,6 @@ JUMPER</text>
 <instance part="C1" gate="G$1" x="53.34" y="76.2"/>
 <instance part="C2" gate="G$1" x="43.18" y="76.2"/>
 <instance part="R1" gate="G$1" x="104.14" y="20.32" rot="R90"/>
-<instance part="U$4" gate="G$1" x="116.84" y="30.48"/>
 <instance part="GND1" gate="1" x="68.58" y="5.08"/>
 <instance part="P+1" gate="VCC" x="66.04" y="50.8"/>
 <instance part="P+2" gate="VCC" x="48.26" y="86.36"/>
@@ -15807,6 +15811,7 @@ JUMPER</text>
 <instance part="U$7" gate="G$1" x="119.38" y="106.68"/>
 <instance part="SUPPLY5" gate="G$1" x="109.22" y="114.3"/>
 <instance part="GND6" gate="1" x="109.22" y="91.44"/>
+<instance part="U$8" gate="G$1" x="116.84" y="30.48"/>
 </instances>
 <busses>
 </busses>
@@ -15947,23 +15952,23 @@ JUMPER</text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="G$1" pin="GATE"/>
-<wire x1="104.14" y1="25.4" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="27.94" x2="106.68" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="25.4" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="30.48" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="NC"/>
 <wire x1="109.22" y1="38.1" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="35.56" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="30.48" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
-<junction x="104.14" y="27.94"/>
+<wire x1="109.22" y1="35.56" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="35.56" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
+<junction x="104.14" y="30.48"/>
+<pinref part="U$8" gate="G$1" pin="GATE"/>
 </segment>
 </net>
 <net name="VCCIO" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="SOURCE"/>
-<wire x1="116.84" y1="20.32" x2="116.84" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCCIO"/>
 <wire x1="116.84" y1="17.78" x2="124.46" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="17.78" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="DRAIN"/>
+<wire x1="116.84" y1="17.78" x2="116.84" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="PWR" gate="G$1" pin="A"/>
@@ -16006,13 +16011,13 @@ JUMPER</text>
 <pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
 <junction x="109.22" y="53.34"/>
-<pinref part="U$4" gate="G$1" pin="DRAIN"/>
 <wire x1="116.84" y1="53.34" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="C"/>
-<wire x1="116.84" y1="45.72" x2="116.84" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="45.72" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
-<junction x="116.84" y="45.72"/>
 <junction x="116.84" y="53.34"/>
+<pinref part="U$8" gate="G$1" pin="SOURCE"/>
+<wire x1="116.84" y1="40.64" x2="116.84" y2="45.72" width="0.1524" layer="91"/>
+<junction x="116.84" y="45.72"/>
 </segment>
 </net>
 </nets>
