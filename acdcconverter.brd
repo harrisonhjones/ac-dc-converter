@@ -264,8 +264,8 @@ LED</text>
 <text x="41.91" y="1.27" size="1.27" layer="22" font="vector" ratio="16" rot="MR270" align="center-right">NOTES</text>
 <text x="14.605" y="29.21" size="1.016" layer="21" font="vector" ratio="16" align="center">AC-DC CONVERTER</text>
 <text x="14.605" y="27.94" size="1.016" layer="21" font="vector" ratio="16" align="center">HARRISON JONES</text>
-<text x="6.35" y="15.875" size="1.016" layer="22" font="vector" ratio="16" rot="MR270" align="center">REV 0.1 MAR/20/2016</text>
-<text x="14.605" y="26.67" size="1.016" layer="21" font="vector" ratio="16" align="center">HHJ.ME</text>
+<text x="6.35" y="15.875" size="1.016" layer="22" font="vector" ratio="16" rot="MR270" align="center">REV 0.5 MAR/20/2016</text>
+<text x="14.605" y="26.67" size="1.016" layer="21" font="vector" ratio="16" align="center">HHJ.ME/acdc</text>
 <circle x="14.2875" y="3.81" radius="1.419903125" width="0.4064" layer="22"/>
 <wire x1="11.43" y1="3.81" x2="12.7" y2="3.81" width="0.4064" layer="22"/>
 <circle x="2.54" y="27.94" radius="2.875084375" width="0.4064" layer="21"/>
